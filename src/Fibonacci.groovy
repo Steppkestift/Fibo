@@ -1,8 +1,9 @@
 def totalClinks = 0
-def partyPeople = 100
-1.upto(partyPeople) {
-        guestNumber ->
-        clinksWithQuest = guestNumber-1
-        totalClinks += clinksWithQuest
-}
-assert totalClinks == {partypeople*(partyPeople-1)}/2
+    for(int guestNumber = 1;
+            guestNumber <= partyPeople;
+            guestNumber++) {
+        int clinksWithGuest = guestNumber-1;
+        totalClinks += clinksWithGuest;
+    }
+
+
